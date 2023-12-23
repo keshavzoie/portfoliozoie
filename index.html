@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zoie portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0dd00ed0fb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="text-edit">
+                <p>Web Developer</p>
+                <h1> Hi, I'm <span>Keshav </span>Raj <br> from Bihar</h1>
+            </div>
+        </div>
+    </div>
+    <!-- It is about section of the portfolio website-->
+    <div id="about">
+        <div class="containers">
+            <div class="row">
+                <div class="about-col-1"></div>
+                    <img src="frontpage2.png" alt="image2" class="img2">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I am Keshav Raj from Madhepura, Bihar. Curently I am living in <strong> Vivekananda Global University, Jaipur.</strong> 
+                        I came here for studying Bachelor of Computer Application(BCA) in specialization of Cloud Technology &
+                         Cyber Security (CT&CS). </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('exprience')">Exprience</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul> 
+                            <li><span>2020</span><br>Passed 10<subscript>th</subscript> from CBSE Board</li>
+                            <li><span>2022</span><br>Passed 12th from BSEB Board</li>
+                            <li><span>2023</span><br>Pursuing Post graduation</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul> 
+                            <li><span>Marketing</span><br>Influencer Marketing</li>
+                            <li><span>UI/UX</span><br>Web Designing Exprience</li>
+                            <li><span>Design</span><br>Completed the Adobe Desgning Course</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="exprience">
+                        <ul> 
+                            <li><span>Marketing</span><br>6month Exprience of Influencer marketing</li>
+                           
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Contact Form-->
+    <div id="contact">
+            <div class="container-cont">
+                <div class="row-cont">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <i class="fa-solid fa-envelope"></i>keshavzoie7@gmail.com</p>
+                        <p> <i class="fa-solid fa-phone"></i>7033514370</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/keshavzoie"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com/keshavzoie"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://instagram.com/keshavzoie"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://linkedin.com/keshavzoie"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                       
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="your email" required>
+                            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn"> Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+    <!-- ___________footer__________ -->
+
+    <div class="footer">
+        <p>All Right Reserved by Keshavzoie</p>
+    </div>
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab( tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+
+</body>
+</html>
