@@ -11,7 +11,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(frontpage.png);
+    background-image: url(/frontpage.png);
     background-size: cover;
 }
 .container{
@@ -200,12 +200,96 @@ button{
 }
 .footer{
     width: 100%;
-    height: 40px;
-    background-color: #ababab;
+    text-align: center;
+    padding: 25px;
+    font-weight: 300;
+    margin-top: 20px;
+    background: #262626;
 
 }
-.footer p{
-    text-align: center;
-    color: black;
-    margin-top: 30px;
+
+/* ------------------css for small screen------------------------ */
+
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(frontpage3.png);
+    }
+    .text-edit{
+        margin-top:40%;
+        font-size:10px;
+        margin-left: -10px;
+    }
+    .text-edit p{
+        font-size: 10px;
+        margin-top: 100px;
+    }
+    .text-edit h1{
+        font-size: 25px;
+    }
+    .container nav img {
+        height: 50px;
+        width: 150px;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: orangered;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+
+    }
+    .about-col-1, .about-col-2{
+
+        flex-basis: 75%;
+
+    }
+    .img2{
+        height: 180px;
+        width: 1000;
+       
+        
+       
+      
+    }
+    .about-col-2{
+        margin:20px;
+    }
+    .row-cont{
+        display: flex;
+        flex-basis: 100%;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+       
+    }
+
+    .footer{
+        font-size: 14px;
+    }
+
+
 }
