@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="header">
+       
         <div class="container">
             <nav>
                 <img src="logo.png" alt="logo">
@@ -18,7 +19,9 @@
                     <li><a href="#">About</a></li>
                     <li><a href="#">contact</a></li>
                     <li><a href="#">Blog</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="text-edit">
                 <p>Web Developer</p>
@@ -34,9 +37,9 @@
                     <img src="frontpage2.png" alt="image2" class="img2">
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hello, I am Keshav Raj from Madhepura, Bihar. Curently I am studying in <strong> Vivekananda Global University, Jaipur.</strong> 
+                    <p>Hello, I am Keshav Raj from Madhepura, Bihar. Curently I am living in <strong> Vivekananda Global University, Jaipur.</strong> 
                         I came here for studying Bachelor of Computer Application(BCA) in specialization of Cloud Technology &
-                         Cyber Security (CT&CS), but college will teach us CT&IS. </p>
+                         Cyber Security (CT&CS). </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('skills')">Skills</p>
@@ -127,6 +130,16 @@
             document.getElementById(tabname).classList.add("active-tab")
         }
 
+
+    </script>
+    <script>
+        var sidemeu =document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right ="-200px";
+        }
 
     </script>
 
