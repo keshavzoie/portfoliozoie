@@ -75,7 +75,7 @@ nav ul li a:hover{
 }
 
 .about-col-1{
-    flex-basis: 35%;
+    flex-basis: -35%;
    
 }
 
